@@ -5,17 +5,17 @@ import Hero from './Hero';
 describe('Hero Component', () => {
   it('renders the main heading', () => {
     const { getByText } = render(<Hero />);
-    expect(getByText('Voyagez avec style')).toBeInTheDocument();
+    expect(getByText('Travel in Style')).toBeInTheDocument();
   });
 
   it('renders the description text', () => {
     const { getByText } = render(<Hero />);
-    expect(getByText(/Johanne VTC vous accompagne/i)).toBeInTheDocument();
+    expect(getByText(/Johanne VTC accompanies you/i)).toBeInTheDocument();
   });
 
   it('renders action buttons', () => {
     const { getByText } = render(<Hero />);
-    expect(getByText('Réserver maintenant')).toBeInTheDocument();
-    expect(getByText('En savoir plus')).toBeInTheDocument();
+    expect(getByText('Book Now')).toBeInTheDocument();
+    expect(getByText('Learn More')).toBeInTheDocument();
   });
 });

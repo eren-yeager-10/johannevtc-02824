@@ -21,14 +21,14 @@ const mockReviews = [
   {
     id: "1",
     rating: 5,
-    comment: "Excellent service, chauffeur très professionnel !",
+    comment: "Excellent service, very professional driver!",
     userName: "Marie L.",
     date: "2024-02-20"
   },
   {
     id: "2",
     rating: 4,
-    comment: "Très bon trajet, ponctuel et agréable.",
+    comment: "Very good trip, punctual and pleasant.",
     userName: "Pierre D.",
     date: "2024-02-19"
   }
@@ -48,44 +48,44 @@ const Index = () => {
       <div id="booking-section" className="container mx-auto py-8 sm:py-12 px-4">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 sm:mb-8">
           <h2 className="text-2xl sm:text-3xl font-uber font-bold">
-            Réservation de course
+            Book a Ride
           </h2>
           <Fleet />
         </div>
         
         <Tabs defaultValue="solo" className="w-full">
-          <TabsList aria-label="Options de réservation">
+          <TabsList aria-label="Booking Options">
             <TabsTrigger 
               value="solo" 
-              aria-label="Réservation Solo"
+              aria-label="Solo Booking"
               aria-controls="solo-tab"
             >
-              Réservation Solo
+              Solo Booking
             </TabsTrigger>
             <TabsTrigger 
               value="group" 
-              aria-label="Réservation de Groupe"
+              aria-label="Group Booking"
               aria-controls="group-tab"
             >
-              Réservation de Groupe
+              Group Booking
             </TabsTrigger>
             <TabsTrigger 
               value="map" 
-              aria-label="Chauffeurs à proximité"
+              aria-label="Nearby Drivers"
               aria-controls="map-tab"
             >
-              Chauffeurs à proximité
+              Nearby Drivers
             </TabsTrigger>
           </TabsList>
           
           <TabsContent value="solo" id="solo-tab">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
               <div>
-                <h3 className="text-lg sm:text-xl font-semibold mb-4">Réservation immédiate</h3>
+                <h3 className="text-lg sm:text-xl font-semibold mb-4">Instant Booking</h3>
                 <QuickOrderForm />
               </div>
               <div>
-                <h3 className="text-lg sm:text-xl font-semibold mb-4">Réservation avancée</h3>
+                <h3 className="text-lg sm:text-xl font-semibold mb-4">Advanced Booking</h3>
                 <AdvancedBooking />
               </div>
             </div>
@@ -107,7 +107,7 @@ const Index = () => {
       <Safety />
       <div className="container mx-auto py-8 sm:py-12 px-4">
         <h2 className="text-2xl sm:text-3xl font-uber font-bold text-center mb-6 sm:mb-8">
-          Avis de nos clients
+          Customer Reviews
         </h2>
         <div className="max-w-2xl mx-auto">
           <ReviewsList reviews={mockReviews} />

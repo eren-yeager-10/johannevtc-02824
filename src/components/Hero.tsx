@@ -33,20 +33,20 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl text-white">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            Voyagez avec style
+            Travel in Style
           </h1>
           <p className="text-xl mb-8 animate-fade-in">
-            Johanne VTC vous accompagne dans tous vos déplacements avec confort et élégance.
+            Johanne VTC accompanies you on all your journeys with comfort and elegance.
           </p>
           <div className="space-x-4 animate-fade-in">
             <button 
               onClick={scrollToBooking}
               className="bg-brand-burgundy text-white px-6 py-3 rounded hover:opacity-90 transition-opacity"
             >
-              Réserver maintenant
+              Book Now
             </button>
             <button className="bg-white/90 text-brand-black px-6 py-3 rounded hover:bg-white transition-colors">
-              En savoir plus
+              Learn More
             </button>
           </div>
         </div>

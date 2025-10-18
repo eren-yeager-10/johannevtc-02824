@@ -1,15 +1,15 @@
 const safetyFeatures = [
   {
-    title: "Vérification des chauffeurs",
-    description: "Tous nos chauffeurs sont vérifiés et suivis en temps réel",
+    title: "Driver Verification",
+    description: "All our drivers are verified and tracked in real-time",
   },
   {
-    title: "Partage de trajet",
-    description: "Partagez votre position en temps réel avec vos proches",
+    title: "Trip Sharing",
+    description: "Share your location in real-time with your loved ones",
   },
   {
-    title: "Assistance 24/7",
-    description: "Notre équipe est disponible à tout moment pour vous aider",
+    title: "24/7 Support",
+    description: "Our team is available anytime to help you",
   },
 ];
 
@@ -18,9 +18,9 @@ const Safety = () => {
     <section className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Votre sécurité est notre priorité</h2>
+          <h2 className="text-4xl font-bold mb-4">Your Safety is Our Priority</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Nous mettons tout en œuvre pour assurer votre sécurité à chaque trajet
+            We do everything to ensure your safety on every trip
           </p>
         </div>
 

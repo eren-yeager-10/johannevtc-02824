@@ -1,17 +1,17 @@
 const services = [
   {
-    title: "Transport VTC",
-    description: "Des chauffeurs professionnels à votre service",
+    title: "VTC Transport",
+    description: "Professional drivers at your service",
     icon: "🚗",
   },
   {
-    title: "Événements",
-    description: "Transport pour vos événements spéciaux",
+    title: "Events",
+    description: "Transportation for your special events",
     icon: "✨",
   },
   {
-    title: "Entreprises",
-    description: "Solutions de transport pour professionnels",
+    title: "Business",
+    description: "Transportation solutions for professionals",
     icon: "💼",
   },
 ];
@@ -21,7 +21,7 @@ const Services = () => {
     <section className="py-20 bg-brand-gray">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12 text-brand-burgundy">
-          Nos services
+          Our Services
         </h2>
         
         <div className="grid md:grid-cols-3 gap-8">
@@ -34,7 +34,7 @@ const Services = () => {
               <h3 className="text-2xl font-bold mb-4 text-brand-violet">{service.title}</h3>
               <p className="text-gray-600">{service.description}</p>
               <button className="mt-6 text-brand-blue font-semibold hover:opacity-70 transition-opacity">
-                En savoir plus →
+                Learn more →
               </button>
             </div>
           ))}

@@ -33,8 +33,8 @@ const Navbar = () => {
                   <Users size={20} />
                   <span>Membre de la flotte</span>
                 </Link>
-                <Link to="/become-driver" className="btn-primary shrink-0">Devenir chauffeur</Link>
-                <Link to="/book" className="btn-secondary shrink-0">Réserver</Link>
+                <Link to="/become-driver" className="btn-primary shrink-0">Become a Driver</Link>
+                <Link to="/book" className="btn-secondary shrink-0">Book</Link>
                 <Link 
                   to="/admin/dashboard" 
                   className="flex items-center gap-2 nav-link text-foreground hover:text-primary transition-colors shrink-0"
@@ -73,8 +73,8 @@ const Navbar = () => {
                 <span>Membre de la flotte</span>
               </div>
             </Link>
-            <Link to="/become-driver" className="block w-full btn-primary text-center">Devenir chauffeur</Link>
-            <Link to="/book" className="block w-full btn-secondary text-center">Réserver</Link>
+            <Link to="/become-driver" className="block w-full btn-primary text-center">Become a Driver</Link>
+            <Link to="/book" className="block w-full btn-secondary text-center">Book</Link>
             <Link 
               to="/admin/dashboard" 
               className="block w-full text-center nav-link text-foreground hover:text-primary transition-colors"
