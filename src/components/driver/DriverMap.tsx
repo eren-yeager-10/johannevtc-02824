@@ -19,12 +19,12 @@ const DriverMap = () => {
           });
         },
         (error) => {
-          let errorMessage = "Impossible d'obtenir votre position.";
+          let errorMessage = "Unable to get your location.";
           if (error.code === 1) {
-            errorMessage = "Veuillez autoriser l'accès à votre position pour utiliser cette fonctionnalité.";
+            errorMessage = "Please allow location access to use this feature.";
           }
           toast({
-            title: "Erreur de localisation",
+            title: "Location Error",
             description: errorMessage,
             variant: "destructive",
           });
@@ -37,8 +37,8 @@ const DriverMap = () => {
       );
     } else {
       toast({
-        title: "Géolocalisation non supportée",
-        description: "Votre navigateur ne supporte pas la géolocalisation.",
+        title: "Geolocation Not Supported",
+        description: "Your browser does not support geolocation.",
         variant: "destructive",
       });
     }

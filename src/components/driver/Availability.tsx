@@ -11,9 +11,9 @@ const Availability = () => {
   return (
     <Card className="p-4">
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-lg font-semibold">Disponibilité</h3>
+        <h3 className="text-lg font-semibold">Availability</h3>
         <div className="flex items-center gap-2">
-          <Label htmlFor="availability">Disponible</Label>
+          <Label htmlFor="availability">Available</Label>
           <Switch
             id="availability"
             checked={isAvailable}

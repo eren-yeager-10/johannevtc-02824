@@ -5,22 +5,22 @@ import { FileIcon, CheckCircle, AlertCircle } from "lucide-react";
 const Documents = () => {
   const documents = [
     {
-      name: "Permis de conduire",
+      name: "Driver's License",
       status: "valid",
       expiryDate: "2025-12-31",
     },
     {
-      name: "Assurance véhicule",
+      name: "Vehicle Insurance",
       status: "expiring",
       expiryDate: "2024-05-15",
     },
     {
-      name: "Carte grise",
+      name: "Vehicle Registration",
       status: "valid",
       expiryDate: "2026-01-01",
     },
     {
-      name: "Attestation VTC",
+      name: "VTC Professional Card",
       status: "valid",
       expiryDate: "2025-06-30",
     },
@@ -40,7 +40,7 @@ const Documents = () => {
               <div>
                 <p className="font-medium">{doc.name}</p>
                 <p className="text-sm text-muted-foreground">
-                  Expire le : {doc.expiryDate}
+                  Expires on: {doc.expiryDate}
                 </p>
               </div>
             </div>
@@ -51,7 +51,7 @@ const Documents = () => {
                 <AlertCircle className="w-5 h-5 text-yellow-500" />
               )}
               <Button variant="outline" size="sm">
-                Mettre à jour
+                Update
               </Button>
             </div>
           </div>

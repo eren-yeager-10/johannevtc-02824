@@ -39,10 +39,10 @@ const RecurringBooking = ({
 
   return (
     <Card className="p-4">
-      <h3 className="text-lg font-semibold mb-4">Réservation récurrente</h3>
+      <h3 className="text-lg font-semibold mb-4">Recurring Booking</h3>
       <div className="space-y-4">
         <div className="space-y-2">
-          <Label>Fréquence</Label>
+          <Label>Frequency</Label>
           <RadioGroup
             defaultValue={pattern.frequency}
             onValueChange={(value) =>
@@ -51,27 +51,27 @@ const RecurringBooking = ({
           >
             <div className="flex items-center space-x-2">
               <RadioGroupItem value="daily" id="daily" />
-              <Label htmlFor="daily">Quotidien</Label>
+              <Label htmlFor="daily">Daily</Label>
             </div>
             <div className="flex items-center space-x-2">
               <RadioGroupItem value="weekly" id="weekly" />
-              <Label htmlFor="weekly">Hebdomadaire</Label>
+              <Label htmlFor="weekly">Weekly</Label>
             </div>
             <div className="flex items-center space-x-2">
               <RadioGroupItem value="monthly" id="monthly" />
-              <Label htmlFor="monthly">Mensuel</Label>
+              <Label htmlFor="monthly">Monthly</Label>
             </div>
           </RadioGroup>
         </div>
 
         <div className="space-y-2">
-          <Label>Intervalle</Label>
+          <Label>Interval</Label>
           <Select
             value={pattern.interval.toString()}
             onValueChange={(value) => handleChange("interval", parseInt(value))}
           >
             <SelectTrigger>
-              <SelectValue placeholder="Sélectionnez l'intervalle" />
+              <SelectValue placeholder="Select interval" />
             </SelectTrigger>
             <SelectContent>
               {[1, 2, 3, 4].map((num) => (
@@ -84,7 +84,7 @@ const RecurringBooking = ({
         </div>
 
         <div className="space-y-2">
-          <Label>Date de fin</Label>
+          <Label>End Date</Label>
           <Input
             type="date"
             value={pattern.endDate}

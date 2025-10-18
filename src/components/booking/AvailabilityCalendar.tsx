@@ -27,7 +27,7 @@ const AvailabilityCalendar = ({
 
   return (
     <Card className="p-4">
-      <h3 className="text-lg font-semibold mb-4">Calendrier de disponibilité</h3>
+      <h3 className="text-lg font-semibold mb-4">Availability Calendar</h3>
       <div className="grid gap-4">
         <Calendar
           mode="single"
@@ -48,7 +48,7 @@ const AvailabilityCalendar = ({
                       variant={slot.available ? "default" : "secondary"}
                       className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 text-[0.6rem] px-1"
                     >
-                      {slot.available ? "Dispo" : "Complet"}
+                      {slot.available ? "Available" : "Full"}
                     </Badge>
                   )}
                 </div>

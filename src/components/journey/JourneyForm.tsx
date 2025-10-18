@@ -17,8 +17,8 @@ import { PriceCalculator } from "../PriceCalculator";
 import { WaitingTime } from "../WaitingTime";
 
 const formSchema = z.object({
-  pickup: z.string().min(2, "L'adresse de départ est requise"),
-  destination: z.string().min(2, "L'adresse de destination est requise"),
+  pickup: z.string().min(2, "Pickup address is required"),
+  destination: z.string().min(2, "Destination address is required"),
   vehicleType: z.enum(["berline", "suv", "van", "luxe"]),
 });
 
@@ -44,16 +44,16 @@ export const JourneyForm = ({ onSubmit, onPriceCalculated, initialPickup = '' }:
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
         <div className="bg-gray-50 p-4 rounded-lg mb-6">
-          <h3 className="text-lg font-semibold mb-4">Votre trajet</h3>
+          <h3 className="text-lg font-semibold mb-4">Your Journey</h3>
           <div className="space-y-4">
             <FormField
               control={form.control}
               name="pickup"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Adresse de départ</FormLabel>
+                  <FormLabel>Pickup Address</FormLabel>
                   <FormControl>
-                    <Input placeholder="Votre position actuelle..." {...field} />
+                    <Input placeholder="Your current location..." {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -65,9 +65,9 @@ export const JourneyForm = ({ onSubmit, onPriceCalculated, initialPickup = '' }:
               name="destination"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Adresse de destination</FormLabel>
+                  <FormLabel>Destination Address</FormLabel>
                   <FormControl>
-                    <Input placeholder="Où souhaitez-vous aller ?" {...field} />
+                    <Input placeholder="Where would you like to go?" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -77,7 +77,7 @@ export const JourneyForm = ({ onSubmit, onPriceCalculated, initialPickup = '' }:
         </div>
 
         <div className="bg-gray-50 p-4 rounded-lg mb-6">
-          <h3 className="text-lg font-semibold mb-4">Type de véhicule</h3>
+          <h3 className="text-lg font-semibold mb-4">Vehicle Type</h3>
           <FormField
             control={form.control}
             name="vehicleType"
@@ -108,7 +108,7 @@ export const JourneyForm = ({ onSubmit, onPriceCalculated, initialPickup = '' }:
           type="submit" 
           className="w-full bg-brand-blue hover:bg-brand-blue/90"
         >
-          Continuer vers le paiement
+          Continue to Payment
         </Button>
       </form>
     </Form>

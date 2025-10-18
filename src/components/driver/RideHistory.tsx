@@ -15,18 +15,18 @@ const RideHistory = () => {
       date: "2024-03-20",
       passenger: "Marie Martin",
       pickup: "Gare du Nord",
-      destination: "Aéroport CDG",
+      destination: "CDG Airport",
       amount: "45€",
-      status: "terminé",
+      status: "completed",
     },
     {
       id: "2",
       date: "2024-03-19",
       passenger: "Pierre Durand",
-      pickup: "Tour Eiffel",
+      pickup: "Eiffel Tower",
       destination: "Arc de Triomphe",
       amount: "25€",
-      status: "terminé",
+      status: "completed",
     },
   ];
 
@@ -36,11 +36,11 @@ const RideHistory = () => {
         <TableHeader>
           <TableRow>
             <TableHead>Date</TableHead>
-            <TableHead>Passager</TableHead>
-            <TableHead>Départ</TableHead>
+            <TableHead>Passenger</TableHead>
+            <TableHead>Pickup</TableHead>
             <TableHead>Destination</TableHead>
-            <TableHead>Montant</TableHead>
-            <TableHead>Statut</TableHead>
+            <TableHead>Amount</TableHead>
+            <TableHead>Status</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>

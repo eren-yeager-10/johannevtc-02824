@@ -8,14 +8,14 @@ const Ratings = () => {
       passenger: "Sophie Bernard",
       date: "2024-03-20",
       rating: 5,
-      comment: "Excellent service, très ponctuel et courtois",
+      comment: "Excellent service, very punctual and courteous",
     },
     {
       id: "2",
       passenger: "Lucas Petit",
       date: "2024-03-19",
       rating: 4,
-      comment: "Bonne expérience, conduite agréable",
+      comment: "Good experience, pleasant drive",
     },
   ];
 
@@ -32,7 +32,7 @@ const Ratings = () => {
             ))}
           </div>
           <span className="text-lg font-medium">4.8/5</span>
-          <span className="text-muted-foreground">(45 avis)</span>
+          <span className="text-muted-foreground">(45 reviews)</span>
         </div>
 
         <div className="space-y-4">

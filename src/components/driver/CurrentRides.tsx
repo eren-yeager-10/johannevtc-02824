@@ -14,23 +14,23 @@ const CurrentRides = () => {
     clientName: "Sophie Martin",
     pickup: "23 Rue de la Paix",
     destination: "Gare du Nord",
-    status: "en_cours"
+    status: "in_progress"
   });
 
   const handleBlockUser = (userId: string, reason: string, permanent: boolean) => {
-    // Dans un cas réel, ceci appellerait une API
-    console.log(`Blocage du client ${userId} pour la raison: ${reason}`);
+    // In a real case, this would call an API
+    console.log(`Blocking client ${userId} for reason: ${reason}`);
     
     toast({
-      title: permanent ? "Demande de bannissement envoyée" : "Demande de blocage envoyée",
-      description: "Un administrateur examinera votre demande",
+      title: permanent ? "Ban Request Sent" : "Block Request Sent",
+      description: "An administrator will review your request",
     });
   };
 
   return (
     <div className="space-y-4">
       <CardHeader className="px-0">
-        <CardTitle>Course en cours</CardTitle>
+        <CardTitle>Current Ride</CardTitle>
       </CardHeader>
 
       <CardContent className="px-0">
@@ -48,7 +48,7 @@ const CurrentRides = () => {
 
                 <div className="space-y-2">
                   <p className="text-sm">
-                    <span className="font-semibold">Départ:</span> {currentRide.pickup}
+                    <span className="font-semibold">Pickup:</span> {currentRide.pickup}
                   </p>
                   <p className="text-sm">
                     <span className="font-semibold">Destination:</span> {currentRide.destination}
@@ -66,7 +66,7 @@ const CurrentRides = () => {
             </CardContent>
           </Card>
         ) : (
-          <p className="text-muted-foreground">Aucune course en cours</p>
+          <p className="text-muted-foreground">No ride in progress</p>
         )}
       </CardContent>
     </div>
